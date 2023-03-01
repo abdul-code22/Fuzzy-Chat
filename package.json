@@ -19,6 +19,7 @@
   "homepage": "https://github.com/abdul-code22/Fuzzy-Chat#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "lightrun": "^1.10.0",
     "socket.io": "^4.6.1"
   }
 }
