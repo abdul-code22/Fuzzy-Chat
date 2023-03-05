@@ -5,10 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fuzzy Chat</title>
-    <link rel="icon" href="fuzzyIcon.png">
+    <link rel="icon" href="chat.png">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    This is HTML
+    <div class="app">
+        <div class="screen join-screen active">
+                <div class="form">
+                    <h2>
+                        Join Fuzzy Chat
+                    </h2>
+                    <div class="form-input">
+                        <label for="UserName">Username</label>
+                        <input type="text" id="UserName">
+                    </div>
+                    <div class="form-input"></div>
+                    <button id="join-user">Join</button>
+                </div>
+        </div>
+        <div class="screen caht-screen">
+            <div class="header">
+                <div class="logo">Fuzzy Chat</div>
+                <button id="exit-chat">Exit</button>
+            </div>
+            <div class="message">
+                <!-- dummy message -->
+                <div class="message my-message">
+                    <div>
+                        <div class="name">You</div>
+                        <div class="text">Hi</div>
+                    </div>
+                </div>
+                <div class="update">
+                    Abc is joined the conversation
+                </div>
+                <div class="message other-message">
+                    <div>
+                        <div class="name">Abc</div>
+                        <div class="text">Hi</div>
+                    </div>
+                </div>
+            </div>
+            <div class="typebox">
+                <input type="text" id="message-input">
+                <button id="send-message">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/node_modules/socket.io/client-dist/socket.io.js"></script>
+    <script src="code.js"></script>
 </body>
 </html>
